@@ -20,6 +20,12 @@ css.render('body {\n  font-size: 12px;\n}');
 ```
 
 
+## Related
+- [rework](https://github.com/reworkcss/rework): Plugin framework for CSS preprocessing
+- [postcss](https://github.com/postcss/postcss): Tool for transforming CSS with JS plugins
+- [cssom](https://github.com/NV/CSSOM): CSS Object Model implementation and CSS parser
+
+
 ## Author
 **Charlike Mike Reagent**
 + [gratipay/tunnckoCore][author-gratipay]

@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-postcss",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Transform CSS to JSON AST using `postcss.parse()`.",
   "scripts": {
     "lint": "jshint index.js && jscs index.js --reporter inline",

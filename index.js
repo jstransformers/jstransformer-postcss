@@ -1,5 +1,5 @@
 /**
- * jstransformer-postcss <https://github.com/jstransformers/jstransformer-postcss>
+ * jstransformer-postcss <https://github.com/tunnckoCore/jstransformer-postcss>
  *
  * Copyright (c) 2015 Charlike Mike Reagent, contributors.
  * Released under the MIT license.
@@ -7,16 +7,20 @@
 
 'use strict';
 
-var fs = require('fs');
 var postcss = require('postcss');
 
 exports.name = 'postcss';
-exports.outputFormat = 'json';
+exports.outputFormat = 'css';
 
-exports.render = function _render(str, opts) {
-  return JSON.stringify(postcss.parse(str, opts));
-};
-exports.renderFile = function _renderFile(filepath, opts) {
-  var input = fs.readFileSync(filepath, 'utf8');
-  return exports.render(input, opts);
+exports.render = function _render(str, opts, plugins) {
+  plugins = plugins || [];
+  plugins = Array.isArray(plugins) ? plugins : [plugins];
+
+  var result = postcss(plugins).process(str, opts);
+
+  return JSON.stringify({
+    root: result.root,
+    opts: result.opts,
+    css: result.css
+  });
 };

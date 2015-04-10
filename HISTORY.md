@@ -1,5 +1,8 @@
 
 
+## v0.2.1 / April 10, 2015
+- add `inputFormats`'
+
 ## v0.2.0 / April 10, 2015
 - publish v0.2.0 to npm
 - refactor

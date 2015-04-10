@@ -10,6 +10,7 @@
 var postcss = require('postcss');
 
 exports.name = 'postcss';
+exports.inputFormats = ['css', 'postcss'];
 exports.outputFormat = 'css';
 
 exports.render = function _render(str, opts, plugins) {

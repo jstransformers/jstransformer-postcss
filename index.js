@@ -13,11 +13,11 @@ exports.name = 'postcss';
 exports.inputFormats = ['css', 'postcss'];
 exports.outputFormat = 'css';
 
-exports.render = function _render(str, opts, plugins) {
-  plugins = plugins || [];
-  plugins = Array.isArray(plugins) ? plugins : [plugins];
+exports.render = function _render(str, options) {
+  options = typeof options === 'object' ? options : {};
+  options.plugins = arrayify(options.plugins);
 
-  var result = postcss(plugins).process(str, opts);
+  var result = postcss(options.plugins).process(str, options);
 
   return JSON.stringify({
     root: result.root,
@@ -25,3 +25,16 @@ exports.render = function _render(str, opts, plugins) {
     css: result.css
   });
 };
+
+/**
+ * arrayify value
+ *
+ * @param  {*} `val`
+ * @return {Array}
+ * @api private
+ */
+function arrayify(val) {
+  return !Array.isArray(val)
+    ? [val]
+    : val;
+}

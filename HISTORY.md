@@ -1,7 +1,12 @@
 
 
+## v0.3.0 / April 22, 2015
+- publish v0.3.0 to npm
+- add support for `options.plugins`
+
 ## v0.2.1 / April 10, 2015
-- add `inputFormats`'
+- publish v0.2.1 to npm
+- add `inputFormats`
 
 ## v0.2.0 / April 10, 2015
 - publish v0.2.0 to npm

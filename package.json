@@ -1,6 +1,6 @@
 {
   "name": "jstransformer-postcss",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "PostCSS support for JSTransformers.",
   "keywords": [
     "css",

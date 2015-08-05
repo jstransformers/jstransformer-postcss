@@ -1,6 +1,11 @@
 # Changelog
 
+## 0.4.1 - 2015-08-05
+- Release v0.4.1 / npm@v0.4.1
+- 100% coverage
+
 ## 0.4.0 - 2015-08-05
+- Release v0.4.0 / npm@v0.4.0
 - update boilerplate
 
 ## 0.3.0 - 2015-04-22

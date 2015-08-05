@@ -1,44 +1,33 @@
 {
   "name": "jstransformer-postcss",
   "version": "0.3.0",
-  "description": "PostCSS support for JS Transformers. CSS to CSS transformation.",
-  "scripts": {
-    "test": "node test",
-    "test-cov": "istanbul cover test",
-    "test-travis": "istanbul cover test --report lcovonly"
+  "description": "PostCSS support for JSTransformers.",
+  "keywords": [
+    "css",
+    "jstransformer",
+    "postcss",
+    "transform"
+  ],
+  "files": [
+    "index.js"
+  ],
+  "devDependencies": {
+    "test-jstransformer": "^1.0.0"
   },
-  "author": {
-    "name": "Charlike Mike Reagent",
-    "email": "mameto_100@mail.bg",
-    "url": "https://github.com/tunnckoCore"
+  "scripts": {
+    "coverage": "test-jstransformer coverage",
+    "test": "test-jstransformer"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jstransformers/jstransformer-postcss.git"
+    "url": "https://github.com/jstransformers/jstransformer-postcss.git"
   },
-  "keywords": [
-    "css",
-    "engine",
-    "jstransformer",
-    "post",
-    "postcss",
-    "pre",
-    "processors",
-    "rework",
-    "template",
-    "transform"
-  ],
-  "license": {
-    "type": "MIT",
-    "url": "https://github.com/jstransformers/jstransformer-postcss/blob/master/LICENSE.md"
+  "author": {
+    "name": "JSTransformers Team",
+    "url": "http://github.com/orgs/jstransformers/people"
   },
+  "license": "MIT",
   "dependencies": {
-    "postcss": "~4.1.4"
-  },
-  "devDependencies": {
-    "assertit": "^0.1.0",
-    "istanbul-harmony": "~0.3.1",
-    "lost": "~6.0.1",
-    "postcss-nested": "~0.2.2"
+    "postcss": "^4.1.16"
   }
 }

@@ -1,25 +1,25 @@
+# Changelog
 
-
-## v0.3.0 / April 22, 2015
+## 0.3.0 - 2015-04-22
 - publish v0.3.0 to npm
 - add support for `options.plugins`
 
-## v0.2.1 / April 10, 2015
+## 0.2.1 - 2015-04-10
 - publish v0.2.1 to npm
 - add `inputFormats`
 
-## v0.2.0 / April 10, 2015
+## 0.2.0 - 2015-04-10
 - publish v0.2.0 to npm
 - refactor
 
-## v0.1.1 / April 3, 2015
+## 0.1.1 - 2015-04-3
 - publish v0.1.1 to npm
 - add .renderFile method
 
-## v0.1.0 / April 3, 2015
+## 0.1.0 - 2015-04-3
 - publish v0.1.0 to npm
 - add related
 - run traviscov(1)
 
-## v0.0.0 / April 3, 2015
+## 0.0.0 - 2015-04-3
 - first commits / publish v0.0.0 to npm

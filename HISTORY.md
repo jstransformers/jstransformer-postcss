@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.4.0 - 2015-08-05
+- update boilerplate
+
 ## 0.3.0 - 2015-04-22
 - publish v0.3.0 to npm
 - add support for `options.plugins`

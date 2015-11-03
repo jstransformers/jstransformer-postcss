@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0 - 2015-11-03
+
+- Supports taking objects or arrays as `options.plugins`
+
 ## 1.0.0 - 2015-11-03
 
 - Updated `postcss` to `^5.0.4`

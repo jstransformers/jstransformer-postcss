@@ -10,7 +10,8 @@
     "index.js"
   ],
   "dependencies": {
-    "postcss": "^5.0.10"
+    "postcss": "^5.0.10",
+    "simple-loop": "0.0.4"
   },
   "devDependencies": {
     "postcss-color-function": "^2.0.0",

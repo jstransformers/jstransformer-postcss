@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 1.0.0 - 2015-11-03
 
 - Updated `postcss` to `^5.0.4`
 - Switched to `.renderAsync`

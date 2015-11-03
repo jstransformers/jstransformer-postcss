@@ -12,6 +12,7 @@
     "index.js"
   ],
   "devDependencies": {
+    "postcss-color-function": "^2.0.0",
     "test-jstransformer": "^1.0.0"
   },
   "scripts": {

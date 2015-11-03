@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+- Updated `postcss` to `^5.0.4`
+- Switched to `.renderAsync`
+
 ## 0.4.1 - 2015-08-05
 - Release v0.4.1 / npm@v0.4.1
 - 100% coverage

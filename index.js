@@ -1,6 +1,5 @@
 'use strict';
 
-var Promise = require('promise');
 var postcss = require('postcss');
 
 exports.name = 'postcss';

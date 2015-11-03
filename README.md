@@ -9,17 +9,15 @@
 
 ## Installation
 
-```
-npm install jstransformer-postcss
-```
+    npm install jstransformer-postcss
 
 ## API
 
 ```js
 var postcss = require('jstransformer')(require('jstransformer-postcss'))
 
-postcss.render('div.foo { width: 100%; }').body
-//=> 'div.foo { width: 100%; }'
+postcss.render('div.postcss { width: 100%; }').body
+//=> 'div.postcss { width: 100%; }'
 ```
 
 ## License

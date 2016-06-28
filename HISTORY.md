@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1 - 2016-06-28
+
+- Update Boilderplate
+- Fix Promise error catching
+
 ## 1.1.0 - 2015-11-03
 
 - Supports taking objects or arrays as `options.plugins`

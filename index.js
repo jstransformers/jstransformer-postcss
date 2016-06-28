@@ -37,8 +37,9 @@ exports.renderAsync = function (str, options) {
       }
     })
     postcss(plugins).process(str, options).then(function (result) {
+      console.dir(result)
       // TODO: Add result.map to "dependencies".
       resolve(result.css)
-    }, reject)
+    }).catch(reject)
   })
 };

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.0 - 2016-07-25
+
+- Support synchronous rendering
+
 ## 1.1.1 - 2016-06-28
 
 - Update Boilderplate

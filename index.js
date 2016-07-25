@@ -43,11 +43,9 @@ exports.render = function (str, options) {
 }
 
 exports.renderAsync = function (str, options) {
-  return new Promise(function (resolve, reject) {
-    var plugins = sanitizePlugins(options.plugins || [])
-    postcss(plugins).process(str, options).then(function (result) {
-      // TODO: Add result.map to "dependencies".
-      resolve(result.css)
-    }).catch(reject)
+  var plugins = sanitizePlugins(options.plugins || [])
+  return postcss(plugins).process(str, options).then(function (result) {
+    // TODO: Add result.map to "dependencies".
+    return result.css
   })
 }

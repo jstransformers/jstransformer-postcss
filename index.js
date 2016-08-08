@@ -38,13 +38,13 @@ function sanitizePlugins(pluginsToLoad) {
 }
 
 exports.render = function (str, options) {
-  var plugins = sanitizePlugins(options.plugins || [])
-  return postcss(plugins).process(str, options).css
+  var plugins = sanitizePlugins(options && options.plugins || [])
+  return postcss(plugins).process(str, options || {}).css
 }
 
 exports.renderAsync = function (str, options) {
-  var plugins = sanitizePlugins(options.plugins || [])
-  return postcss(plugins).process(str, options).then(function (result) {
+  var plugins = sanitizePlugins(options && options.plugins || [])
+  return postcss(plugins).process(str, options || {}).then(function (result) {
     // TODO: Add result.map to "dependencies".
     return result.css
   })

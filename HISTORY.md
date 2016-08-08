@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1 - 2016-08-08
+
+- Support `options` being `null` or `undefined`
+
 ## 1.2.0 - 2016-07-25
 
 - Support synchronous rendering

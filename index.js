@@ -4,7 +4,6 @@ var postcss = require('postcss')
 var loop = require('simple-loop')
 
 exports.name = 'postcss'
-exports.inputFormats = ['postcss', 'css']
 exports.outputFormat = 'css'
 
 function sanitizePlugins(pluginsToLoad) {

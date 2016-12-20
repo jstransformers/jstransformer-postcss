@@ -1,6 +1,10 @@
 {
+  "dependencies": {
+    "postcss": "^5.0.10",
+    "simple-loop": "0.0.4"
+  },
   "name": "jstransformer-postcss",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "PostCSS support for JSTransformers.",
   "keywords": [
     "jstransformer",
@@ -9,20 +13,18 @@
   "files": [
     "index.js"
   ],
-  "dependencies": {
-    "postcss": "^5.0.10",
-    "simple-loop": "0.0.4"
-  },
   "devDependencies": {
     "postcss-color-function": "^2.0.0",
-    "test-jstransformer": "^1.0.0"
+    "test-jstransformer": "^1.0.0",
+    "xo": "^0.17.1"
   },
   "scripts": {
     "coverage": "test-jstransformer coverage",
-    "test": "test-jstransformer"
+    "test": "test-jstransformer",
+    "posttest": "echo 'Ignored xo --space --no-semicolon index.js'"
   },
   "engines": {
-    "node": ">= 4"
+    "node": ">=4"
   },
   "repository": {
     "type": "git",

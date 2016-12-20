@@ -1,10 +1,9 @@
-'use strict';
+'use strict'
 
 var postcss = require('postcss')
 var loop = require('simple-loop')
 
 exports.name = 'postcss'
-exports.inputFormats = ['postcss', 'css']
 exports.outputFormat = 'css'
 
 function sanitizePlugins(pluginsToLoad) {
@@ -13,10 +12,9 @@ function sanitizePlugins(pluginsToLoad) {
     var plugin = null
     switch (typeof i) {
       case 'number':
-        if (typeof item == 'string') {
+        if (typeof item === 'string') {
           plugin = require(item)
-        }
-        else {
+        } else {
           plugin = item
         }
         break
@@ -38,13 +36,15 @@ function sanitizePlugins(pluginsToLoad) {
 }
 
 exports.render = function (str, options) {
-  var plugins = sanitizePlugins(options && options.plugins || [])
-  return postcss(plugins).process(str, options || {}).css
+  var opts = options || {}
+  var plugins = sanitizePlugins(opts.plugins || [])
+  return postcss(plugins).process(str, opts).css
 }
 
 exports.renderAsync = function (str, options) {
-  var plugins = sanitizePlugins(options && options.plugins || [])
-  return postcss(plugins).process(str, options || {}).then(function (result) {
+  var opts = options || {}
+  var plugins = sanitizePlugins(opts.plugins || [])
+  return postcss(plugins).process(str, opts).then(function (result) {
     // TODO: Add result.map to "dependencies".
     return result.css
   })

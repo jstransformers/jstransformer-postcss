@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2 - 2016-12-19
+
+- Updated Boilerplate
+
 ## 1.2.1 - 2016-08-08
 
 - Support `options` being `null` or `undefined`
@@ -10,7 +14,7 @@
 
 ## 1.1.1 - 2016-06-28
 
-- Update Boilderplate
+- Update Boilerplate
 - Fix Promise error catching
 
 ## 1.1.0 - 2015-11-03

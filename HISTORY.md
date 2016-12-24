@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0 - 2016-12-24
+
+- Updated inputFormats
+
 ## 1.2.2 - 2016-12-19
 
 - Updated Boilerplate

@@ -1,10 +1,10 @@
 {
   "dependencies": {
-    "postcss": "^5.0.10",
+    "postcss": "^5.2.7",
     "simple-loop": "0.0.4"
   },
   "name": "jstransformer-postcss",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "PostCSS support for JSTransformers.",
   "keywords": [
     "jstransformer",
@@ -14,7 +14,7 @@
     "index.js"
   ],
   "devDependencies": {
-    "postcss-color-function": "^2.0.0",
+    "postcss-color-function": "^2.0.1",
     "test-jstransformer": "^1.0.0",
     "xo": "^0.17.1"
   },

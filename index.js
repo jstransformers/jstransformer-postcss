@@ -1,15 +1,15 @@
 'use strict'
 
-var postcss = require('postcss')
-var loop = require('simple-loop')
+const postcss = require('postcss')
+const loop = require('simple-loop')
 
 exports.name = 'postcss'
 exports.outputFormat = 'css'
 
 function sanitizePlugins(pluginsToLoad) {
-  var plugins = []
+  const plugins = []
   loop(pluginsToLoad, function (item, i) {
-    var plugin = null
+    let plugin = null
     switch (typeof i) {
       case 'number':
         if (typeof item === 'string') {
@@ -36,14 +36,14 @@ function sanitizePlugins(pluginsToLoad) {
 }
 
 exports.render = function (str, options) {
-  var opts = options || {}
-  var plugins = sanitizePlugins(opts.plugins || [])
+  const opts = options || {}
+  const plugins = sanitizePlugins(opts.plugins || [])
   return postcss(plugins).process(str, opts).css
 }
 
 exports.renderAsync = function (str, options) {
-  var opts = options || {}
-  var plugins = sanitizePlugins(opts.plugins || [])
+  const opts = options || {}
+  const plugins = sanitizePlugins(opts.plugins || [])
   return postcss(plugins).process(str, opts).then(function (result) {
     // TODO: Add result.map to "dependencies".
     return result.css

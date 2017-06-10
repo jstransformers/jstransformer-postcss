@@ -8,7 +8,7 @@ exports.outputFormat = 'css'
 
 function sanitizePlugins(pluginsToLoad) {
   const plugins = []
-  loop(pluginsToLoad, function (item, i) {
+  loop(pluginsToLoad, (item, i) => {
     let plugin = null
     switch (typeof i) {
       case 'number':
@@ -44,7 +44,7 @@ exports.render = function (str, options) {
 exports.renderAsync = function (str, options) {
   const opts = options || {}
   const plugins = sanitizePlugins(opts.plugins || [])
-  return postcss(plugins).process(str, opts).then(function (result) {
+  return postcss(plugins).process(str, opts).then(result => {
     // TODO: Add result.map to "dependencies".
     return result.css
   })

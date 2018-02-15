@@ -15,7 +15,7 @@
 ## API
 
 ```js
-var postcss = require('jstransformer')(require('jstransformer-postcss'));
+var postcss = require('jstransformer')(require('jstransformer-postcss'))
 
 postcss.render('div.postcss { width: 100%; }').body
 //=> 'div.postcss { width: 100%; }'

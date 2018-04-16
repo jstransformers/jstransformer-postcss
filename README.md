@@ -1,7 +1,5 @@
 # jstransformer-postcss
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/jstransformers/jstransformer-postcss.svg)](https://greenkeeper.io/)
-
 [PostCSS](https://github.com/postcss/postcss) support for [JSTransformers](http://github.com/jstransformers).
 
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-postcss/master.svg)](https://travis-ci.org/jstransformers/jstransformer-postcss)

@@ -13,21 +13,23 @@ function sanitizePlugins(pluginsToLoad) {
     switch (typeof i) {
       case 'number':
         if (typeof item === 'string') {
-          plugin = require(item) // eslint-disable-line import/no-dynamic-require
+          plugin = require(item)
         } else {
           plugin = item
         }
+
         break
       case 'object':
         plugin = i
         break
       case 'string':
-        plugin = require(i)(item) // eslint-disable-line import/no-dynamic-require
+        plugin = require(i)(item)
         break
       default:
         plugin = i
         break
     }
+
     if (plugin) {
       plugins.push(plugin)
     }

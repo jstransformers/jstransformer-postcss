@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "postcss": "^7.0.0",
+    "postcss": "^8.2.10",
     "simple-loop": "0.0.4"
   },
   "name": "jstransformer-postcss",
